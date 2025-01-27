@@ -2,18 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fit - Maxx | Get Fit Your Body & Mind</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2e60ef228e.js" crossorigin="anonymous"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+        @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
         .font-inter {
             font-family: "Inter", serif;
@@ -25,8 +27,81 @@
     </style>
 </head>
 
-<body class="font-inter">
-
+<body class="font-inter bg-black text-white px-5 md:px-7 lg:py-">
+    <header class="max-w-[1060px] mx-auto rounded-full">
+        <!-- navbar -->
+        <nav class="flex justify-between my-14">
+            <h3 class="text-[#E6533C] text-4xl font-extrabold italic">
+                Fit - MaxX
+            </h3>
+            <ul
+                class="hidden sm:flex justify-between lg:gap-6 border-solid border-2 border-gray-700 rounded-4xl py-1 px-2 text-base lg:text-lg">
+                <li class="bg-[#E6533C] py-2 px-5 rounded-4xl mr-2">
+                    <a href="#">Home</a>
+                </li>
+                <li class="hover:bg-[#E6533C] py-2 px-5 rounded-4xl mx-2">
+                    <a href="#">Service</a>
+                </li>
+                <li class="hover:bg-[#E6533C] py-2 px-5 rounded-4xl mx-2">
+                    <a href="#">About</a>
+                </li>
+                <li class="hover:bg-[#E6533C] py-2 px-5 rounded-4xl ml-2">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <!-- hero container -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 lg:items-center">
+            <!-- hero text -->
+            <div class="">
+                <h1 class="text-4xl md:text-7xl font-extrabold">
+                    Get body in <br />
+                    <span class="font-dancing">shape</span> & stay <br />
+                    healthy
+                </h1>
+                <p class="my-7">
+                    A huge selection of health and fitness content, healthy recipes and
+                    <br />
+                    transformation stories to help you get fit and stay fit!
+                </p>
+                <button
+                    class="font-semibold leading-5 bg-[#E6533C] border-2 border-[#E6533C] py-4 px-10 rounded-4xl hover:bg-transparent hover:border-2 hover:border-white mr-3 mb-3 md:mb-0">
+                    Join Now!
+                </button>
+                <button
+                    class="font-semibold leading-5 bg-transparent border-2 border-white py-4 px-10 rounded-4xl hover:bg-[#E6533C] hover:border-2 hover:border-[#E6533C]">
+                    Download App
+                </button>
+            </div>
+            <!-- hero img -->
+            <div class="relative mt-12 md:mt-24 lg:mt-0">
+                <img class="w-full md:w-2/4 lg:w-auto mx-auto" src="images/hero.png" alt="Hero image" />
+                <div
+                    class="absolute right-1/9 md:right-2/9 lg:right-1/9 top-1/8 md:top-1/5 lg:top-2/7 bg-gray-800 py-3 md:py-5 px-5 md:px-6 border-2 border-gray-700 rounded-md inline-block">
+                    <h4 class="text-3xl md:text-4xl font-extrabold leading-7">500+</h4>
+                    <p class="text-[0.56rem] md:text-sm">Free Workout Videos</p>
+                </div>
+                <div
+                    class="absolute left-1/9 top-5/9 md:left-2/9 md:top-3/5 lg:left-1/9 lg:top-7/9 bg-gray-600 py-3 md:py-5 px-5 md:px-6 border-2 border-gray-700 rounded-md inline-block">
+                    <div class="flex gap-5">
+                        <div><i class="fa-solid fa-play bg-[#E6533C] px-4 py-3.5 rounded-full flex flex-row"></i></div>
+                    <div>
+                        <h4 class="text-3xl md:text-4xl font-extrabold leading-7">350+</h4>
+                        <p class="text-[0.56rem] md:text-sm">Video tutorial</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 </body>
 
 </html>
